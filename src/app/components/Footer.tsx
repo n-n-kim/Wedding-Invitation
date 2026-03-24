@@ -1,0 +1,81 @@
+import { motion } from 'motion/react';
+import { Heart } from 'lucide-react';
+
+export function Footer() {
+  return (
+    <footer className="py-16 px-6 bg-gradient-to-b from-white to-[#EEDFCA]/30">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-4xl mx-auto text-center"
+      >
+        {/* Decorative divider */}
+        <div className="mb-8 flex items-center justify-center">
+          <div className="h-px w-20 bg-[#CFD6AD]" />
+          <div className="mx-4">
+            <span className="text-4xl text-[#F3BDCB] font-bold">囍</span>
+          </div>
+          <div className="h-px w-20 bg-[#CFD6AD]" />
+        </div>
+
+        {/* Thank you message */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mb-8"
+        >
+          <p className="text-2xl md:text-3xl text-[#1C4F7C] mb-6 leading-relaxed" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Cảm ơn bạn đã dành thời gian xem lời mời của chúng tôi
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            Sự hiện diện của bạn trong ngày trọng đại này là niềm hạnh phúc và vinh hạnh lớn nhất đối với chúng tôi.
+            Rất mong được đón tiếp bạn!
+          </p>
+        </motion.div>
+
+        {/* Couple names */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mb-8"
+        >
+          <div className="text-3xl md:text-4xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Quốc Tân & Ngọc Trâm
+          </div>
+        </motion.div>
+
+        {/* Wedding date */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="mb-12"
+        >
+          <p className="text-lg text-gray-600">20.06.2026</p>
+        </motion.div>
+
+        {/* Decorative divider */}
+        <div className="mb-8 flex items-center justify-center">
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#CFD6AD] to-transparent" />
+        </div>
+
+        {/* Copyright */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.8 }}
+        >
+          <p className="text-sm text-gray-500 opacity-50">Thiệp cưới Tiến Đạt ehehe</p>
+        </motion.div>
+      </motion.div>
+    </footer>
+  );
+}
