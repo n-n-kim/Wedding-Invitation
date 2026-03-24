@@ -5,7 +5,6 @@ import { CheckCircle2, Send } from 'lucide-react';
 export function RSVP() {
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
     attendance: '',
     guests: '1',
     message: '',
@@ -20,7 +19,6 @@ export function RSVP() {
       setIsSubmitted(false);
       setFormData({
         name: '',
-        phone: '',
         attendance: '',
         guests: '1',
         message: '',
@@ -45,7 +43,7 @@ export function RSVP() {
         className="max-w-3xl mx-auto"
       >
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl text-[#1C4F7C] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl text-[#345938] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Xác Nhận Tham Dự
           </h2>
           <p className="text-gray-600">
@@ -67,7 +65,7 @@ export function RSVP() {
               className="text-center py-12"
             >
               <CheckCircle2 className="w-16 h-16 text-[#CFD6AD] mx-auto mb-4" />
-              <h3 className="text-2xl text-[#1C4F7C] mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+              <h3 className="text-2xl text-[#345938] mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Cảm ơn bạn!
               </h3>
               <p className="text-gray-700">
@@ -88,24 +86,8 @@ export function RSVP() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#1C4F7C] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors"
                   placeholder="Nhập họ và tên của bạn"
-                />
-              </div>
-
-              {/* Phone */}
-              <div>
-                <label htmlFor="phone" className="block text-sm text-gray-700 mb-2">
-                  Số điện thoại
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#1C4F7C] transition-colors"
-                  placeholder="Số điện thoại của bạn"
                 />
               </div>
 
@@ -120,7 +102,7 @@ export function RSVP() {
                   required
                   value={formData.attendance}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#1C4F7C] transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors"
                 >
                   <option value="">Chọn trạng thái</option>
                   <option value="yes">Tôi sẽ tham dự</option>
@@ -138,19 +120,17 @@ export function RSVP() {
                   <label htmlFor="guests" className="block text-sm text-gray-700 mb-2">
                     Số lượng người tham dự
                   </label>
-                  <select
+                  <input
+                    type="number"
                     id="guests"
                     name="guests"
+                    min="1"
+                    max="20"
                     value={formData.guests}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#1C4F7C] transition-colors"
-                  >
-                    <option value="1">1 người</option>
-                    <option value="2">2 người</option>
-                    <option value="3">3 người</option>
-                    <option value="4">4 người</option>
-                    <option value="5">5 người</option>
-                  </select>
+                    className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors"
+                    placeholder="Nhập số người"
+                  />
                 </motion.div>
               )}
 
@@ -165,7 +145,7 @@ export function RSVP() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#1C4F7C] transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors resize-none"
                   placeholder="Gửi lời chúc đến cô dâu chú rể..."
                 />
               </div>
@@ -175,7 +155,7 @@ export function RSVP() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full py-4 bg-[#1C4F7C] text-white rounded-full hover:bg-[#1C4F7C]/90 transition-colors flex items-center justify-center gap-2"
+                className="w-full py-4 bg-[#345938] text-white rounded-full hover:bg-[#345938]/90 transition-colors flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 <span>Gửi xác nhận</span>

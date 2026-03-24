@@ -45,9 +45,9 @@ export function Gift() {
             transition={{ type: 'spring' }}
             className="inline-flex items-center justify-center mb-6"
           >
-            <GiftIcon className="w-8 h-8 text-[#1C4F7C]" />
+            <GiftIcon className="w-8 h-8 text-[#345938]" />
           </motion.div>
-          <h2 className="text-4xl md:text-5xl text-[#1C4F7C] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl text-[#345938] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Mừng Cưới
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -73,7 +73,7 @@ export function Gift() {
                   className={`inline-block px-4 py-2 rounded-full text-sm ${
                     index === 0
                       ? 'bg-[#1C4F7C] text-white'
-                      : 'bg-[#F3BDCB] text-[#1C4F7C]'
+                      : 'bg-[#F3BDCB] text-[#345938]'
                   }`}
                 >
                   {account.title}
@@ -96,7 +96,7 @@ export function Gift() {
               <div className="space-y-4">
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Ngân hàng</p>
-                  <p className="text-lg text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  <p className="text-lg text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {account.bank}
                   </p>
                 </div>
@@ -104,7 +104,7 @@ export function Gift() {
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Số tài khoản</p>
                   <div className="flex items-center justify-between bg-[#EEDFCA]/30 rounded-xl px-4 py-3">
-                    <p className="text-lg text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <p className="text-lg text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
                       {account.accountNumber}
                     </p>
                     <button
@@ -115,7 +115,7 @@ export function Gift() {
                       {copiedField === `account-${index}` ? (
                         <Check className="w-5 h-5 text-[#CFD6AD]" />
                       ) : (
-                        <Copy className="w-5 h-5 text-[#1C4F7C]" />
+                        <Copy className="w-5 h-5 text-[#345938]" />
                       )}
                     </button>
                   </div>
@@ -124,7 +124,7 @@ export function Gift() {
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Chủ tài khoản</p>
                   <div className="flex items-center justify-between bg-[#EEDFCA]/30 rounded-xl px-4 py-3">
-                    <p className="text-lg text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    <p className="text-lg text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
                       {account.accountName}
                     </p>
                     <button
@@ -135,7 +135,7 @@ export function Gift() {
                       {copiedField === `name-${index}` ? (
                         <Check className="w-5 h-5 text-[#CFD6AD]" />
                       ) : (
-                        <Copy className="w-5 h-5 text-[#1C4F7C]" />
+                        <Copy className="w-5 h-5 text-[#345938]" />
                       )}
                     </button>
                   </div>

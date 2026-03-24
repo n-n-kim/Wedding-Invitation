@@ -33,7 +33,7 @@ export function Hero({ onOpen }: HeroProps) {
           className="mb-8 flex justify-center"
         >
           <div className="w-16 h-16 rounded-full bg-[#F3BDCB]/30 flex items-center justify-center">
-            <span className="text-4xl text-[#1C4F7C]">囍</span>
+            <span className="text-4xl text-[#345938]">囍</span>
           </div>
         </motion.div>
 
@@ -41,7 +41,7 @@ export function Hero({ onOpen }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="text-sm tracking-[0.3em] uppercase text-[#1C4F7C] mb-6"
+          className="text-sm tracking-[0.3em] uppercase text-[#345938] mb-6"
         >
           Thư mời tiệc cưới
         </motion.p>
@@ -50,11 +50,11 @@ export function Hero({ onOpen }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="text-5xl md:text-7xl mb-4 text-[#1C4F7C] relative inline-block px-8 py-6 bg-[#F7F6F2]/30 backdrop-blur-sm rounded-[4rem]"
+          className="text-5xl md:text-7xl mb-4 text-[#345938] relative inline-block px-8 py-6 bg-[#F7F6F2]/30 backdrop-blur-sm rounded-[4rem]"
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Quốc Tân
-          <span className="block text-3xl md:text-4xl my-4 text-[#1C4F7C]">&</span>
+          <span className="block text-3xl md:text-4xl my-4 text-[#345938]">&</span>
           Ngọc Trâm
         </motion.h1>
 
@@ -64,7 +64,7 @@ export function Hero({ onOpen }: HeroProps) {
           transition={{ delay: 0.9 }}
           className="mt-8 mb-12"
         >
-          <p className="text-2xl md:text-3xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>20.06.2026</p>
+          <p className="text-2xl md:text-3xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>20.06.2026</p>
         </motion.div>
 
         <motion.button
@@ -74,7 +74,7 @@ export function Hero({ onOpen }: HeroProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onOpen}
-          className="px-8 py-4 bg-[#1C4F7C] text-white rounded-full hover:bg-[#1C4F7C]/90 transition-colors"
+          className="px-8 py-4 bg-[#345938] text-white rounded-full hover:bg-[#345938]/90 transition-colors"
           style={{ fontFamily: "'Inter', sans-serif" }}
         >
           Mở thiệp cưới

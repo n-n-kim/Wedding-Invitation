@@ -15,7 +15,7 @@ export function Footer() {
         <div className="mb-8 flex items-center justify-center">
           <div className="h-px w-20 bg-[#CFD6AD]" />
           <div className="mx-4">
-            <span className="text-4xl text-[#F3BDCB] font-bold">囍</span>
+            <span className="text-4xl text-[#345938] font-bold">囍</span>
           </div>
           <div className="h-px w-20 bg-[#CFD6AD]" />
         </div>
@@ -28,7 +28,7 @@ export function Footer() {
           transition={{ delay: 0.2 }}
           className="mb-8"
         >
-          <p className="text-2xl md:text-3xl text-[#1C4F7C] mb-6 leading-relaxed" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <p className="text-2xl md:text-3xl text-[#345938] mb-6 leading-relaxed" style={{ fontFamily: "'Playfair Display', serif" }}>
             Cảm ơn bạn đã dành thời gian xem lời mời của chúng tôi
           </p>
           <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ export function Footer() {
           transition={{ delay: 0.4 }}
           className="mb-8"
         >
-          <div className="text-3xl md:text-4xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-3xl md:text-4xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
             Quốc Tân & Ngọc Trâm
           </div>
         </motion.div>

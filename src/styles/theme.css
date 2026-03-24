@@ -8,7 +8,7 @@
   --wedding-nude: #EEDFCA;
   --wedding-pink: #F3BDCB;
   --wedding-sage: #CFD6AD;
-  --wedding-navy: #1C4F7C;
+  --wedding-navy: #345938;
   --wedding-black: #000000;
   
   --background: #F7F6F2;
@@ -17,7 +17,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #1C4F7C;
+  --primary: #345938;
   --primary-foreground: #ffffff;
   --secondary: #F3BDCB;
   --secondary-foreground: #000000;

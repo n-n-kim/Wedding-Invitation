@@ -53,9 +53,9 @@ export function Countdown() {
             transition={{ type: 'spring' }}
             className="inline-flex items-center justify-center mb-6"
           >
-            <Clock className="w-8 h-8 text-[#1C4F7C]" />
+            <Clock className="w-8 h-8 text-[#345938]" />
           </motion.div>
-          <h2 className="text-4xl md:text-5xl text-[#1C4F7C] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl text-[#345938] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Đếm Ngược Đến Ngày Cưới
           </h2>
           <p className="text-gray-600">Thời gian còn lại</p>
@@ -78,7 +78,7 @@ export function Countdown() {
               className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-[#CFD6AD]/30"
             >
               <div
-                className="text-4xl md:text-5xl text-[#1C4F7C] mb-2"
+                className="text-4xl md:text-5xl text-[#345938] mb-2"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {String(unit.value).padStart(2, '0')}

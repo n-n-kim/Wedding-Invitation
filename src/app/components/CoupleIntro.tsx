@@ -29,7 +29,7 @@ export function CoupleIntro() {
             className="inline-flex items-center justify-center mb-8"
           >
             <div className="text-5xl md:text-7xl" style={{ fontFamily: "'Great Vibes', cursive" }}>
-              <span className="text-[#1C4F7C]">Trịnh Quốc Tân</span>
+              <span className="text-[#345938]">Trịnh Quốc Tân</span>
             </div>
           </motion.div>
 
@@ -42,7 +42,7 @@ export function CoupleIntro() {
           >
             <div className="h-px w-20 bg-[#CFD6AD]" />
             <div className="mx-6">
-              <span className="text-5xl text-[#F3BDCB] font-bold">囍</span>
+              <span className="text-5xl text-[#345938] font-bold">囍</span>
             </div>
             <div className="h-px w-20 bg-[#CFD6AD]" />
           </motion.div>
@@ -54,7 +54,7 @@ export function CoupleIntro() {
             transition={{ delay: 0.6, type: 'spring' }}
             className="text-5xl md:text-7xl" style={{ fontFamily: "'Great Vibes', cursive" }}
           >
-            <span className="text-[#1C4F7C]">Trần Ngọc Trâm</span>
+            <span className="text-[#345938]">Trần Ngọc Trâm</span>
           </motion.div>
         </div>
 
@@ -85,16 +85,16 @@ export function CoupleIntro() {
             onClick={toggleMusic}
             className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow border border-[#CFD6AD]/30"
           >
-            <Music className="w-5 h-5 text-[#1C4F7C]" />
+            <Music className="w-5 h-5 text-[#345938]" />
             {isPlaying ? (
               <>
-                <Pause className="w-4 h-4 text-[#1C4F7C]" />
-                <span className="text-sm text-[#1C4F7C]">Tạm dừng nhạc</span>
+                <Pause className="w-4 h-4 text-[#345938]" />
+                <span className="text-sm text-[#345938]">Tạm dừng nhạc</span>
               </>
             ) : (
               <>
-                <Play className="w-4 h-4 text-[#1C4F7C]" />
-                <span className="text-sm text-[#1C4F7C]">Phát nhạc nền</span>
+                <Play className="w-4 h-4 text-[#345938]" />
+                <span className="text-sm text-[#345938]">Phát nhạc nền</span>
               </>
             )}
           </button>
@@ -109,7 +109,7 @@ export function CoupleIntro() {
           className="mt-16 text-center max-w-2xl mx-auto"
         >
           <p className="text-xl md:text-2xl text-gray-700 italic leading-relaxed" style={{ fontFamily: "'Playfair Display', serif" }}>
-            "Tình yêu không phải là việc nhìn nhau, mà là cùng nhau nhìn về một hướng"
+            "Two hearts - one love - one lifetime"
           </p>
         </motion.div>
       </motion.div>

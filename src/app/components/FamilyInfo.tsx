@@ -19,9 +19,9 @@ export function FamilyInfo() {
             transition={{ type: 'spring' }}
             className="inline-flex items-center justify-center mb-6"
           >
-            <Users className="w-8 h-8 text-[#1C4F7C]" />
+            <Users className="w-8 h-8 text-[#345938]" />
           </motion.div>
-          <h2 className="text-4xl md:text-5xl text-[#1C4F7C] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl text-[#345938] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Gia Đình Hai Bên
           </h2>
           <p className="text-gray-600">Trân trọng giới thiệu</p>
@@ -42,25 +42,18 @@ export function FamilyInfo() {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 text-center">
               <div>
                 <p className="text-sm text-gray-500 mb-2">Cha</p>
-                <p className="text-xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  Ông ...
+                <p className="text-2xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Ông Trịnh Quang Vinh
                 </p>
               </div>
 
               <div>
                 <p className="text-sm text-gray-500 mb-2">Mẹ</p>
-                <p className="text-xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  Bà ...
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-[#CFD6AD]/30">
-                <p className="text-sm text-gray-500 mb-2">Địa chỉ</p>
-                <p className="text-gray-700 leading-relaxed">
-                  ...
+                <p className="text-2xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Bà Nguyễn Thị Thùy Trang 
                 </p>
               </div>
             </div>
@@ -75,30 +68,23 @@ export function FamilyInfo() {
             className="bg-gradient-to-br from-[#F3BDCB]/20 to-white p-8 md:p-10 rounded-3xl border border-[#F3BDCB]/30"
           >
             <div className="text-center mb-8">
-              <div className="inline-block px-4 py-2 bg-[#F3BDCB] text-[#1C4F7C] rounded-full text-sm mb-4">
+              <div className="inline-block px-4 py-2 bg-[#F3BDCB] text-[#345938] rounded-full text-sm mb-4">
                 Nhà Gái
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 text-center">
               <div>
                 <p className="text-sm text-gray-500 mb-2">Cha</p>
-                <p className="text-xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  Ông ...
+                <p className="text-2xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Ông Trần Tuấn Kiệt
                 </p>
               </div>
 
               <div>
                 <p className="text-sm text-gray-500 mb-2">Mẹ</p>
-                <p className="text-xl text-[#1C4F7C]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  Bà ...
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-[#F3BDCB]/30">
-                <p className="text-sm text-gray-500 mb-2">Địa chỉ</p>
-                <p className="text-gray-700 leading-relaxed">
-                  ...
+                <p className="text-2xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  Bà Ngô Ngọc Phỉ
                 </p>
               </div>
             </div>

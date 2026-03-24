@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
-import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from 'react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import doraemonImg from "../../assets/anh-doraemon-meme-pho-bien-voi-bieu-cam-hai-huoc-goi-nho-tuoi-tho.jpg";
 
 export function Gallery() {
@@ -59,7 +59,7 @@ export function Gallery() {
         className="max-w-7xl mx-auto"
       >
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl text-[#1C4F7C] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h2 className="text-4xl md:text-5xl text-[#345938] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Album Ảnh Cưới
           </h2>
           <p className="text-gray-600">Những khoảnh khắc đẹp nhất của chúng tôi</p>
