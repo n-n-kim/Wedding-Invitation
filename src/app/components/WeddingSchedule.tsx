@@ -17,7 +17,7 @@ export function WeddingSchedule() {
       >
         {/* Header */}
         <div className="text-center mb-16">
-          <motion.div
+          {/* <motion.div
             initial={{ scale: 0, rotate: -180 }}
             whileInView={{ scale: 1, rotate: 0 }}
             viewport={{ once: true }}
@@ -30,7 +30,7 @@ export function WeddingSchedule() {
                 <span className="text-2xl" style={{ fontFamily: "'Playfair Display', serif" }}>囍</span>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

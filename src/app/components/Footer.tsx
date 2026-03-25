@@ -15,7 +15,7 @@ export function Footer() {
         <div className="mb-8 flex items-center justify-center">
           <div className="h-px w-20 bg-[#CFD6AD]" />
           <div className="mx-4">
-            <span className="text-4xl text-[#345938] font-bold">囍</span>
+            <span className="text-4xl text-[#345938] font-bold">♡</span>
           </div>
           <div className="h-px w-20 bg-[#CFD6AD]" />
         </div>
@@ -45,7 +45,7 @@ export function Footer() {
           transition={{ delay: 0.4 }}
           className="mb-8"
         >
-          <div className="text-3xl md:text-4xl text-[#345938]" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <div className="text-3xl md:text-4xl text-[#345938]" style={{ fontFamily: "'Edwardian Script ITC3', cursive" }}>
             Quốc Tân & Ngọc Trâm
           </div>
         </motion.div>

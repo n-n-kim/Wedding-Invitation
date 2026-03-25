@@ -28,7 +28,7 @@ export function CoupleIntro() {
             transition={{ delay: 0.2, type: 'spring' }}
             className="inline-flex items-center justify-center mb-8"
           >
-            <div className="text-5xl md:text-7xl" style={{ fontFamily: "'Great Vibes', cursive" }}>
+            <div className="text-5xl md:text-7xl" style={{ fontFamily: "'Edwardian Script ITC3', cursive" }}>
               <span className="text-[#345938]">Trịnh Quốc Tân</span>
             </div>
           </motion.div>
@@ -42,7 +42,12 @@ export function CoupleIntro() {
           >
             <div className="h-px w-20 bg-[#CFD6AD]" />
             <div className="mx-6">
-              <span className="text-5xl text-[#345938] font-bold">囍</span>
+              <span
+                className="text-6xl text-[#345938] leading-none"
+                style={{ fontFamily: "'Parisienne', 'Great Vibes', cursive" }}
+              >
+                &
+              </span>
             </div>
             <div className="h-px w-20 bg-[#CFD6AD]" />
           </motion.div>
@@ -52,7 +57,7 @@ export function CoupleIntro() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, type: 'spring' }}
-            className="text-5xl md:text-7xl" style={{ fontFamily: "'Great Vibes', cursive" }}
+            className="text-5xl md:text-7xl" style={{ fontFamily: "'Edwardian Script ITC3', cursive" }}
           >
             <span className="text-[#345938]">Trần Ngọc Trâm</span>
           </motion.div>

@@ -32,17 +32,19 @@ export function Hero({ onOpen }: HeroProps) {
           transition={{ delay: 0.3, duration: 0.6, type: 'spring' }}
           className="mb-8 flex justify-center"
         >
-          <div className="w-16 h-16 rounded-full bg-[#F3BDCB]/30 flex items-center justify-center">
-            <span className="text-4xl text-[#345938]">囍</span>
+          <div className="px-5 py-2 rounded-full border border-[#345938]/20 bg-[#F7F6F2]/50">
+            <span className="text-xs md:text-sm uppercase tracking-[0.35em] text-[#345938] whitespace-nowrap">
+              Save The Date
+            </span>
           </div>
-        </motion.div>
+        </motion.div> 
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="text-sm tracking-[0.3em] uppercase text-[#345938] mb-6"
-        >
+        > 
           Thư mời tiệc cưới
         </motion.p>
 
@@ -51,7 +53,7 @@ export function Hero({ onOpen }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           className="text-5xl md:text-7xl mb-4 text-[#345938] relative inline-block px-8 py-6 bg-[#F7F6F2]/30 backdrop-blur-sm rounded-[4rem]"
-          style={{ fontFamily: "'Great Vibes', cursive" }}
+          style={{ fontFamily: "'Edwardian Script ITC3', cursive" }}
         >
           Quốc Tân
           <span className="block text-3xl md:text-4xl my-4 text-[#345938]">&</span>
