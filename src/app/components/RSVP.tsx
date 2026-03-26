@@ -11,20 +11,45 @@ export function RSVP() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real app, this would send data to a backend
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        attendance: '',
-        guests: '1',
-        message: '',
-      });
-    }, 3000);
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const formBody = new URLSearchParams({
+      name: formData.name,
+      attendance: formData.attendance,
+      guests: formData.attendance === 'Tôi sẽ tham dự' ? formData.guests : '0',
+      message: formData.message,
+    }); 
+
+    const response = await fetch('https://script.google.com/macros/s/AKfycbw9bD4Khilx0snCBKf8N6BPkAXJidv9cZfY7T4OjdLRbgf3XLkwKRf2yMezRyGW8CCm/exec', {
+      method: 'POST',
+      body: formBody,
+    });
+
+    const result = await response.json();
+    console.log(result);
+
+    if (result.success) {
+      setIsSubmitted(true);
+
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          attendance: '',
+          guests: '1',
+          message: '',
+        });
+      }, 3000);
+    } else {
+      alert('Gửi thất bại: ' + result.message);
+    }
+  } catch (error) {
+    console.error(error);
+    alert('Có lỗi khi gửi xác nhận');
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -105,13 +130,13 @@ export function RSVP() {
                   className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors"
                 >
                   <option value="">Chọn trạng thái</option>
-                  <option value="yes">Tôi sẽ tham dự</option>
-                  <option value="no">Rất tiếc tôi không thể tham dự</option>
+                  <option value="Tôi sẽ tham dự">Tôi sẽ tham dự</option>
+                  <option value="Rất tiếc tôi không thể tham dự">Rất tiếc tôi không thể tham dự</option>
                 </select>
               </div>
 
               {/* Number of guests */}
-              {formData.attendance === 'yes' && (
+              {formData.attendance === 'Tôi sẽ tham dự' && (
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
@@ -125,7 +150,7 @@ export function RSVP() {
                     id="guests"
                     name="guests"
                     min="1"
-                    max="20"
+                    max="50"
                     value={formData.guests}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-[#CFD6AD]/30 bg-white focus:outline-none focus:border-[#345938] transition-colors"
